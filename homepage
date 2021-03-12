@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+body{
+  text-align: center;
+  font-family:noto sans 
+}
+ 
+#logo {
+  font-family:noto sans jp;
+  font-size: 100px;
+  position: relative; 
+  top: 90px; 
+  
+  
+  
+  }
+#g{
+  color: rgb(25, 103, 210); 
+}
+#o{
+  color: rgb(217, 48, 37); 
+}
+#o2{
+  color: #FFCA28; 
+}
+#g2{
+  color: rgb(25, 103, 210); 
+}
+#l{
+  color: rgb(24, 128, 56); 
+}
+#e{
+  color: rgb(217, 48, 37); 
+}
+#search{
+  position: relative;
+     right: 190px;
+  top:33px;
+ 
+}
+#text-bar{
+  width: 400px;
+  text-align: center;
+  height: 35px;
+    
+}
+#text-bar::placeholder{
+  text-align: center;  
+}
+#but{
+  margin-top: 20px;
+  
+}
+#sub{
+  margin-right:5px;
+
+}
+</style>
+<html>
+<header>
+<section id="logo">
+  
+  <p><b id="g">G</b><b id="o">o</b><b id="o2">o</b><b id="g2">g</b><b id="l">l</b><b id="e">e</b></p>
+  </section>
+<form>
+  
+  <svg viewBox="0 0 512 512" width="15" id="search" fill="#BDBDBD" title="search">
+  <path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z" />
+</svg>
+  <section id="search-bar">
+  <input id="text-bar" type="text" placeholder="Realizar una búsqueda en Google o escribir una URL">
+    <div id="but">
+<button id="sub" type="submit"> Buscar</button>
+  <button id="luck" type="submit"> Me siento con suerte</button>
+      </div>
+  </section>
+  </form>
+  </header>
+
+</hmtl>
