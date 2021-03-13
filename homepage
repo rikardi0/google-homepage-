@@ -1,12 +1,19 @@
 <!DOCTYPE html>
+
+<html>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
 body{
   text-align: center;
   font-family:noto sans;
   font-size: 15px; 
+}
+header{
+  position: relative; 
+  top: 150px;
 }
 #nav-bar{
 display: flex;
@@ -18,7 +25,34 @@ width: 350px;
 }
 #nav-bar li{
 list-style:none;
+  font-size: 13px; 
 }
+#nav-bar a{
+color: black;
+  text-decoration:none;
+  text-weight: normal;
+
+}
+#cor:hover {
+ 
+  cursor: pointer; 
+}
+button{
+ cursor: pointer;  
+}
+#sign-in{
+  background:#4285F4;
+  color:#FFFFFF;
+  font-weight: bold;
+  width: 80px;
+  height: 30px;
+  margin-left: -25px;
+  margin-top: -10px;
+  border:none;
+  border-radius: 5%;
+  font-family: roboto; 
+}
+
 header{
   position:relative;
   top:100px; 
@@ -43,32 +77,53 @@ header{
   text-align: center;
   height: 35px;
     margin-top: 30px;
+ 
+ outline:none;
+  border-style: groove;
+  border-color: #BDBDBD;
+  border-radius:1%;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.19)
 }
+
 #text-bar::placeholder{
-  text-align: center;  
-}
+  text-align: center; }
+ 
 #but{
   margin-top: 20px;
-  
+  position:relative;
+top: 10px;
+   
 }
-#sub{
-  margin-right:5px;
 
+  
+
+.b{
+  margin-right:15px;
+  border: none;
+  background:#EFEBE9;
+  height: 25px;
+  border-radius: 5%; 
+ 
+}
+.b:hover{
+  border:solid;
+  border-width: 0.5px;
+  border-color: #BDBDBD;
 }
 </style>
-<html>
- <ul>
+  <ul>
     <nav id="nav-bar">
-    <li><a target="_blank" href="#">Gmail</a></li>
-    <li><a href="#">Imágenes</a></li>
+    <li><a  id="cor" target="_blank" href="#">Gmail</a></li>
+    <li><a id="cor" href="#">Imágenes</a></li>
     <li><a target="_blank" href="#"><img src="https://raw.githubusercontent.com/TarekVisch/google-homepage/5b6d9ae9dddf6d333ae383d82b3dfe693b886a1f/images/google-apps.svg" width="20px"</a></li>
-    <li><a href="#" target="_blank"><button>Sign in</button></a></li>
+    <li><a href="#" target="_blank"><button id="sign-in">Sign in</button></a></li>
   </nav>
       </ul>
-<header>
+  
+  <header>
 <section id="logo">
   
-  <p><b id="g">G</b><b id="o">o</b><b id="o2">o</b><b id="g2">g</b><b id="l">l</b><b id="e">e</b></p>
+  <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
   </section>
 <form>
   
@@ -78,11 +133,13 @@ header{
   <section id="search-bar">
   <input id="text-bar" type="text" placeholder="Realizar una búsqueda en Google o escribir una URL">
     <div id="but">
-<button id="sub" type="submit"> Buscar</button>
-  <button id="luck" type="submit"> Me siento con suerte</button>
+<button class="b"type="submit"> Buscar</button>
+  <button class="b" type="submit"> Me siento con suerte</button>
       </div>
   </section>
   </form>
   </header>
+  <footer>
+    </fotoer>
 
 </hmtl>
